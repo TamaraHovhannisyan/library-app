@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 import Image from "next/image";
+import BookCoverSvg from "./BookCoverSvg";
 type BookCoverVariant = "extraSmall" | "small" | "medium" | "regular" | "wide";
 
 const variantStyles: Record<BookCoverVariant, string> = {
@@ -31,9 +32,21 @@ const BookCover = ({
         className
       )}
     >
-      <div className=" z-10 left-[12%] w-[87.5%] h-[600px]">
-        <Image src={coverImage} alt="Book cover" fill className="rounded-sm" />
-      </div>
+      book photo
+      {/* book photo
+      <BookCoverSvg coverColor={coverColor} />
+      <div
+        className="absolute z-10"
+        style={{ left: "12%", width: "87.5%", height: "88%" }}
+      >
+        
+        <Image
+          src={coverImage}
+          alt="book cover"
+          fill
+          className="rounded-sm object-fill"
+        />
+      </div> */}
     </div>
   );
 };

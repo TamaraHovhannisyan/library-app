@@ -1,8 +1,15 @@
 import React from 'react'
 
-const BookList = () => {
+interface Props{
+  title: string;
+  books: Book[];
+  containerClassName?: string;
+
+
+}
+const BookList = ({title, books, containerClassName} : Props) => {
     return (
-      <section>
+      <section className=''>
         <h2 className=" text-4xl " style={{ color: "#EAEAEA" }}>
           Popular Books
         </h2>
