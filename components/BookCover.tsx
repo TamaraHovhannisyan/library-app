@@ -14,7 +14,7 @@ const variantStyles: Record<BookCoverVariant, string> = {
 
 interface Props {
   className?: string;
-  variant: BookCoverVariant;
+  variant?: BookCoverVariant;
   coverColor: string;
   coverImage: string;
 }
@@ -32,21 +32,19 @@ const BookCover = ({
         className
       )}
     >
-      book photo
-      {/* book photo
+      book photo book photo
       <BookCoverSvg coverColor={coverColor} />
       <div
         className="absolute z-10"
         style={{ left: "12%", width: "87.5%", height: "88%" }}
       >
-        
         <Image
           src={coverImage}
           alt="book cover"
           fill
-          className="rounded-sm object-fill"
+          className="rounded-sm  w-[44px] h-[99px]"
         />
-      </div> */}
+      </div>
     </div>
   );
 };
